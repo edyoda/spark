@@ -1,0 +1,11 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/awantik/workspace/spark-scala/HelloWorld/target/scala-2.11/hello-world_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/awantik/workspace/spark-scala/HelloWorld/target/scala-2.11/classes/sample.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/awantik/workspace/spark-scala/HelloWorld/target/scala-2.11/classes/sample$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/awantik/workspace/spark-scala/HelloWorld/target/scala-2.11/classes/Hello$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hello.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/awantik/workspace/spark-scala/HelloWorld/target/scala-2.11/classes/Hello.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

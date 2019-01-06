@@ -1,0 +1,30 @@
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkConf
+import org.apache.spark.sql.{Row, SaveMode, SparkSession}
+import java.io.File
+
+object Hello {
+
+  case class Record(key: Int, value: String)
+  
+def main(args : Array[String]) = {
+
+     val warehouseLocation = new File("spark-warehouse").getAbsolutePath
+
+    val spark = SparkSession
+      .builder()
+      .appName("Spark Hive Example")
+      .config("spark.sql.warehouse.dir", warehouseLocation)
+      .enableHiveSupport()
+.getOrCreate()
+
+import spark.implicits._
+import spark.sql
+
+val recordsDF = spark.createDataFrame((1 to 100).map(i => Record(i, s"val_$i")))
+recordsDF.createOrReplaceTempView("records")
+
+sql("SELECT * FROM records r JOIN src s ON r.key = s.key").show()
+
+}
+}
